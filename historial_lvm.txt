@@ -1,0 +1,87 @@
+    1  clear
+    2  free -h
+    3  sudo mkswap /dev/sdd1
+    4  sudo swapon /dev/sdd1
+    5  sudo mkswap /dev/sdd1
+    6  free -h
+    7  swapon -s
+    8  sudo fdisk /dev/sdc
+    9  sudo wipefs -a /dev/sdc1
+   10  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   11  pvs
+   12  sudo vgcreate vg_datos /dev/sdc1 /de/sdd2
+   13  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   14  vgs
+   15  clear
+   16  pvs
+   17  clear
+   18  sudo vgs
+   19  sudo pvs
+   20  sudo vgcreate vg_web /dev/sdc2
+   21  pvs
+   22  sudo lvcreate -L 1G vg_web -n |v_web1
+   23  sudo lvcreate -L 1G vg_web -n lv_web1
+   24  sudo lvcreate -L 512M vg_web -n lv_web2
+   25  sudo lvcreate -L 512M vg_web -n lv_web3
+   26  lvs
+   27  pvs
+   28  sudo fdisk -l
+   29  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   30  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   31  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   32  wq
+   33  ls -l
+   34  clear
+   35  pwd
+   36  ssh-keygen -t sudo lvcreate -L 1G vg_web -n lv_web1
+   37  clear
+   38  sudo pvs > pvs.txt
+   39  sudo vgs > vgs.txt
+   40  sudo lvs > lvs.txt
+   41  hustory > historial_lvm.txt
+   42  history > historial_lvm.txt
+   43  git config --global Menoso07
+   44  git config --global "Menoso07"
+   45  git config --global user.name "Menoso07"
+   46  git config --global user.email "scratcher299@gmail.com"
+   47  git add.
+   48  git add 
+   49  git add pvs.txt vgs.txt lvs.txt historial_lvm.txt 
+   50  clear
+   51  ls -l
+   52  cd carpeta_compartida/
+   53  ls -l
+   54  cd
+   55  clear
+   56  ls -l
+   57  pwd
+   58  cd home
+   59  clear
+   60  cd /home/vagrant/
+   61  clear
+   62  git clone git@github
+   63  git clone git@github.com:/Menoso07/tp2_mena_agustin_AySO.git
+   64  ssh-keygen -t ed25519 -c "scratcher299@gmail.com"
+   65  clear
+   66  ssh-keygen -t ed25519 -C "scratcher299@gmail.com"
+   67  clip < ~/.ssh/id_ed25519.pub
+   68  apt install geomview
+   69  clip < ~/.ssh/id_ed25519.pub
+   70  cd ~/.ssh
+   71  ls 
+   72  cat known_hosts 
+   73  cat id_ed25519.pub 
+   74  cd .
+   75  cd ..
+   76  clear
+   77  pwd
+   78  cd /home/vagrant/
+   79  git clone git@github.com:Menoso07/tp2_mena_agustin_AySO.git
+   80  cat $HOME/.ssh/*.pub
+   81  git clone git@github.com:Menoso07/tp2_mena_agustin_AySO.git
+   82  cd tp2_mena_agustin_AySO/
+   83  clear
+   84  sudo pvs > pvs.txt
+   85  sudo vgs > vgs.txt
+   86  sudo lvs > lvs.txt
+   87  history > historial_lvm.txt
